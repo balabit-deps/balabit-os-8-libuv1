@@ -5,3 +5,4 @@ path_max_zero_st_size
 skip-multicast-test
 python2.diff
 CVE-2020-8252.patch
+CVE-2021-22918.patch

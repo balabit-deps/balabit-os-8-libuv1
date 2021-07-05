@@ -1,3 +1,15 @@
+libuv1 (1.34.2-1ubuntu1.3) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Out-of-bounds read
+    - debian/patches/CVE-2021-22918.patch: fix OOB read in punycode decoder
+      src/idna.c, test/test-idna.c, test/test-list.h and
+      skip test-tcp-writealot in riscv64.
+    - CVE-2021-22918
+  * debian/rules: bump timeout multiplier for tests in slow arch and adding
+    -no-parallel.
+
+ -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Mon, 05 Jul 2021 14:32:59 -0300
+
 libuv1 (1.34.2-1ubuntu1.1) focal-security; urgency=medium
 
   * SECURITY UPDATE: Buffer overflow
